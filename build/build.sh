@@ -8,8 +8,10 @@ command -v docker >/dev/null 2>&1 || {
 
 SCRIPT_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-docker build -t lskjs/dind:latest "$SCRIPT_ROOT/.."
+docker build -t lskjs/puppeteer-nodejs:latest "$SCRIPT_ROOT/.."
+docker build -t lskjs/puppeteer-nodejs:15.8.0 "$SCRIPT_ROOT/../15.8.0"
 
 # docker rmi -f $(docker images -q --filter "dangling=true")
 
-docker push lskjs/dind:latest
+docker push lskjs/puppeteer-nodejs:15.8.0
+docker push lskjs/puppeteer-nodejs:latest
