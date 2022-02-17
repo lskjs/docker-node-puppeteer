@@ -6,3 +6,4 @@ Docker image based on `nodejs` with puppeteer deps.
 
 `docker run -it --rm lskjs/puppeteer-nodejs:latest npm start`
 `docker run -it --rm lskjs/puppeteer-nodejs:15.8.0 npm start`
+`docker run -it --rm lskjs/puppeteer-nodejs:17.4.0 npm start`
